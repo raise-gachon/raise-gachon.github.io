@@ -24,3 +24,45 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* assets/css/main.scss */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;700&display=swap');
+
+.navbar-brand.title {
+  /* 2. 굵기 및 크기 조절 */
+  font-weight: 500 !important;
+  // font-size: 1.0rem !important;
+  
+  /* 3. 자간 및 색상 (선택 사항) */
+  letter-spacing: -0.5px; /* 약간 좁게 설정하면 더 모던해 보입니다 */
+  
+  /* 4. 대문자 변환 여부 */
+  text-transform: none; /* 'uppercase'로 설정하면 모두 대문자가 됩니다 */
+}
+
+#navbar {
+  background-color: #fafafa !important;
+  opacity: 1 !important;                 /* 투명도 0% (완전 불투명) */
+
+  /* x-offset y-offset blur-radius spread-radius color */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0) !important;
+  
+  /* 애니메이션 효과 (스크롤 시 부드럽게 나타나게 하고 싶을 때) */
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* 내비게이션 메뉴 폰트 스타일 조정 */
+.navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+}
+
+/* 현재 선택된 메뉴와 마우스 오버 시 스타일 통합 */
+.navbar-nav .nav-item.active > .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+  font-weight: 500 !important;
+}
+
+#progress {
+  height: 3px !important;
+}

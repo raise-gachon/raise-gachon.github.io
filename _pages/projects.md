@@ -1,13 +1,14 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+# description: A growing collection of your cool projects.
 nav: true
-nav_order: 3
-display_categories: [work, fun]
+nav_order: 5
+display_categories: [Government Grants, Industrial Grants]
 horizontal: false
 ---
+TBA
 
 <!-- pages/projects.md -->
 <div class="projects">

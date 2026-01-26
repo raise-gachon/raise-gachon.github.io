@@ -1,115 +1,227 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{ICRA = "IEEE International Conference on Robotics and Automation (ICRA)"}
+@string{IROS = "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"}
+@string{CASE = "IEEE International Conference on Automation Science and Engineering (CASE)"}
+@string{RSS = "Robotics: Science and Systems (RSS)"}
+@string{RAL = "IEEE Robotics and Automation Letters (RA-L)"}
+@string{TRO = "IEEE Transactions on Robotics (T-RO)"}
+@string{JFR = "Journal of Field Robotics (JFR)"}
+@string{IJRR = "International Journal of Robotics Research (IJRR)"}
+@string{ECCV = "European Conference on Computer Vision (ECCV)"}
+@string{ICCV = "International Conference on Computer Vision (ICCV)"}
+@string{ICCV_ws = "International Conference on Computer Vision Workshops"}
+@string{CVPR = "IEEE Conference on Computer Vision and Pattern Recognition (CVPR)"}
+@string{PAMI ="IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)"}
+@string{BMVC ="The British Machine Vision Conference (BMVC)"}
+@string{TIM ="IEEE Transactions on Instrumentation and Measurement (TIM)"}
 
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{TIM25,
+  title={Retraining-Free Camera Localization in Indoor Point Clouds Using Edges and Normals},
+  author={Jaehyeon Kang},
+  abstract={Estimating a 6-DoF camera pose in a prebuilt map is essential for spatial perception in robotics and autonomous driving. While structure-from-motion (SfM) maps provide visual context, they lack geometric precision and scale. In contrast, point cloud maps from LiDAR or depth cameras offer accurate geometry for metric-level perception. This article presents a novel camera localization method that enhances pose estimation accuracy in indoor point cloud maps that do not contain visual information. By leveraging low-level features such as edges and normals from both the query image and the point cloud, the proposed approach operates across diverse environments without scene-specific training. Specifically, we introduce an edge alignment cost that measures the edge point reprojection errors and a normal distribution cost using normalized information distance (NID) to quantify normal vector similarity. An adaptive weighting scheme integrates these costs in an optimization framework. Experiments on simulated and real-world datasets demonstrate that our method outperforms state-of-the-art feature-matching algorithms in localization accuracy.},
+  journal=TIM,
+  volume={74},
+  issue={7511811},
+  year={2025},
+  doi={https://doi.org/10.1109/TIM.2025.3597621},
+  preview={TIM25_preview.png}
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{TII24,
+  title={A Measure of Semantic Class Difference of Point Reprojection Pairs in Camera Pose Estimation},
+  author={Jaehyeon Kang and Changjoo Nam},
+  abstract={In this article, we propose a new measure that evaluates the semantic errors of camera poses in visual odometry (VO) and visual simultaneous localization and mapping (VSLAM). Traditionally, VO/VSLAM methods have used photometric images to estimate camera poses, but they suffer from varying illumination and viewpoint changes. Thus, methods using semantic images have been an alternative to increase consistency, as semantic information has shown its robustness even in hostile environments. Our measure compares semantic classes of map point reprojection pairs between images to improve the camera pose estimation accuracy in VO/VSLAM. To evaluate the difference between semantic classes, we adopt the normalized information distance from information theory. Furthermore, we suggest a weight parameter to balance the existing error of VO/VSLAM with the semantic error introduced by our approach. Our experimental results, obtained from the VKITTI and KITTI benchmark datasets, show that the proposed semantic error measure reduces both the relative pose error and absolute trajectory error of camera pose estimation compared to the existing photometric image-based errors of indirect and direct VO/VSLAM.},
+  journal={IEEE Transactions on Industrial Informatics (TII)},
+  volume={20},
+  issue={1},
+  pages={201--212},
+  year={2024},
+  doi={https://doi.org/10.1109/TII.2023.3258443},
+  preview={TII24_preview.png}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+@article{EAAI22,
+  title={Spatial template-based geometric complexity reduction method for photo-realistic modeling of large-scale indoor spaces},
+  author={Janghun Hyeon and Joohyung Kim and Hyunga Choi and Bumchul Jang and Jaehyeon Kang and Nakju Doh},
+  abstract={Recent progresses in image-based rendering (IBR) have demonstrated the feasibility of photo-realistic modeling in room-scale indoor spaces. However, it is difficult to extend the method to large-scale indoor spaces, because the computational complexity increases exponentially as the geometric complexity increases. In this study, we propose a framework that automatically generates photo-realistic model of large-scale indoor spaces. We first define primary factors that increase geometrical complexity as geometrically excluded objects (GEOs). The proposed framework removes GEOs in images and point clouds to efficiently represent large-scale indoor spaces. To this end, we introduce a segmentation method to segment GEOs from every image coherently. In addition, we also introduce an image inpainting method to fill in the segmented images for photo-realistic indoor modeling. Experiments are conducted in three small-scale spaces and two large-scale indoor spaces. In the experiments, the proposed modules are validated thoroughly. In addition, the experimental results show that the proposed method enables to generate photo-realistic indoor models automatically and efficiently.},
+  journal={Engineering Applications of Artificial Intelligence},
+  volume={116},
+  issue={105369},
+  year={2022},
+  doi={https://doi.org/10.1016/j.engappai.2022.105369},
+  preview={EAAI22_preview.png}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation={* Example use of superscripts<br>† Albert Einstein},
-  selected={true},
-  inspirehep_id = {3255}
+@article{CEA22,
+  title={Tomato harvesting robotic system based on Deep-ToMaToS: Deep learning network using transformation loss for 6D pose estimation of maturity classified tomatoes with side-stem},
+  author={JoonYoung Kim and HyeRan Pyo and Inhoon Jang and Jaehyeon Kang and ByeongKwon Ju and KwangEun Ko},
+  abstract={This paper presents the development of an autonomous harvesting robot system for tomato, a representative crop cultivated in the facility horticulture smart farm. The automated harvesting work using a robotic system is very challenging because of the appearance, environmental features, such as the atypical directions of the peduncles or their growing form in a bunch. Also, the robot system should enable the harvesting of the target fruit only without damaging other fruits, stems, and branches. Hence, this paper presents a deep learning network pipeline, Deep-ToMaToS, capable of three-level maturity classification and 6D pose (3D translation + 3D rotation) estimation of the target fruit simultaneously. Due to the difficulties encountered in building a large-scale dataset to train and test the deep learning model for the 6D pose estimation in the real world, we presented an automatic data collection scheme based on a photo-realistic 3D simulator environment. The robotic harvesting system includes a harvesting motion control algorithm based on the result of the 6D pose estimation. The overall process of the motion control phase is described along with the decision way of the appropriate final posture of the harvesting module mounted at the end-effector of the robot manipulator via removal of invalid motions getting out of the valid workspace or redundant motions. We conducted experiments on the 6D pose estimation based on the Deep-ToMaToS and the harvesting motion control in virtual and real smart farm environments. The experimental results showed a 6D pose estimation accuracy of 96 % based on the ADD_S metric, and the proposed harvesting motion control algorithm achieves the harvesting success rate of 84.5 % on average. The experimental results reveal that the harvesting robot system has significant potential to extend to harvesting works for other fruits and crops.},
+  journal={Computers and Electronics in Agriculture},
+  volume={201},
+  issue={107300},
+  year={2022},
+  doi={https://doi.org/10.1016/j.compag.2022.107300},
+  preview={CEA22_preview.png}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{TIM22,
+  title={Precise Camera–LiDAR Extrinsic Calibration Based on a Weighting Strategy Using Analytic Plane Covariances},
+  author={Gunhee Koo and Jaehyeon Kang and Bumchul Jang and Nakju Doh},
+  abstract={Planarity is a practical feature for estimating the camera–LiDAR extrinsic parameters. LiDAR directly measures the 3-D plane in the form of a point cloud, but the camera captures the 2-D plane image which requires perspective-n-point (PnP) techniques for 3-D plane estimation. Likewise, these 3-D plane acquisition processes by LiDAR and camera are quite different; hence, their plane covariances from each sensor also differ. The plane measurement covariance originates from the LiDAR measurement noise; it can be directly calculated from a 3-D point cloud. The plane parameter covariances originate from the corner point errors in a 2-D image; however, their direct formulas have not been studied. In this study, we analytically derive the plane parameter covariances under the assumption of linear error propagation. To validate the proposed covariances, we implemented a simulation to observe how effectively the proposed covariances reflect on the true plane parameter covariances. Next, we validated that the proposed covariances could increase the performance of the camera–LiDAR extrinsic calibration. We compared our method with other calibration methods by varying the pixel noise levels and the number of board measurements in calibration simulations. In calibration field tests, we calibrated a scanning system equipped with a Ladybug5+ camera and a VLP-16 LiDAR and compared our method with other calibration methods.},
+  journal=TIM,
+  volume={71},
+  issue={7504513},
+  year={2022},
+  doi={https://doi.org/10.1109/TIM.2022.3202549},
+  preview={TIM22_preview.png}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+@article{COP22,
+  title={Vignetting dimensional geometric models and a downhill simplex search},
+  author={Hyung Tae Kim and Duk Yeon Lee and Dongwoon Choi and Jaehyeon Kang and Dong-Wook Lee},
+  abstract={Three-dimensional (3D) geometric models are introduced to correct vignetting, and a downhill simplex search is applied to determine the coefficients of a 3D model used in digital microscopy. Vignetting is nonuniform illuminance with a geometric regularity on a two-dimensional (2D) image plane, which allows the illuminance distribution to be estimated using 3D models. The 3D models are defined using generalized polynomials and arbitrary coefficients. Because the 3D models are nonlinear, their coefficients are determined using a simplex search. The cost function of the simplex search is defined to minimize the error between the 3D model and the reference image of a standard white board. The conventional and proposed methods for correcting the vignetting are used in experiments on four inspection systems based on machine vision and microscopy. The methods are investigated using various performance indices, including the coefficient of determination, the mean absolute error, and the uniformity after correction. The proposed method is intuitive and shows performance similar to the conventional approach, using a smaller number of coefficients.},
+  journal={Current Optics and Photonics},
+  volume={6},
+  issue={2},
+  pages={161--170},
+  year={2022},
+  preview={COP22_preview.png}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@inproceedings{ICRA20,
+  title={Analytic Plane Covariances Construction for Precise Planarity-based Extrinsic Calibration of Camera and LiDAR},
+  author={Gunhee Koo and Jaehyeon Kang and Bumchul Jang and Nakju Doh},
+  abstract={IPlanarity of checkerboards is a widely used feature for extrinsic calibration of camera and LiDAR. In this study, we propose two analytically derived covariances of (i) plane parameters and (ii) plane measurement, for precise extrinsic calibration of camera and LiDAR. These covariances allow the graded approach in planar feature correspondences by exploiting the uncertainty of a set of given features in calibration. To construct plane parameter covariance, we employ the error model of 3D corner points and the analytically formulated plane parameter errors. Next, plane measurement covariance is directly derived from planar regions of point clouds using the out-of-plane errors. In simulation validation, our method is compared to an existing uncertainty-excluding method using the different number of target poses and the different levels of noise. In field experiment, we validated the applicability of the proposed analytic plane covariances for precise calibration using the basic planarity-based method and the latest planarity-and-linearity-based method.},
+  booktitle=ICRA,
+  pages={6042--6048},
+  year={2020},
+  doi={https://doi.org/10.1109/ICRA40945.2020.9197149},
+  preview={ICRA20_preview.png}
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{RAL20,
+  title={Modeling of architectural components for large-scale indoor spaces from point cloud measurements},
+  author={Gahyeon Lim and Youjin Oh and Dongwoo Kim and ChangHyun Jun and Jaehyeon Kang and Nakju Doh},
+  abstract={In this letter, we propose a method to model architectural components in large-scale indoor spaces from point cloud measurements. The proposed method enables the modeling of curved surfaces, cylindrical pillars, and slanted surfaces, which cannot be modeled using existing approaches. It operates by constructing the architectural points from the raw point cloud after removing non-architectural (objects) points and filling in the holes caused by their exclusion. Then, the architectural points are represented using a set of piece-wise planar segments. Finally, the adjacency graph of the planar segments is constructed to verify the fact that every planar segment is closed. This ensures a watertight mesh model generation. Experimentation using 14 different real-world indoor space datasets and 2 public datasets, comprising spaces of various sizes-from room-scale to large-scale (12,557 m2), verify the accuracy of the proposed method in modeling environments with curved surfaces, cylindrical pillars, and slanted surfaces.},
+  journal=RAL,
+  volume={5},
+  issue={3},
+  pages={3830--3837},
+  year={2020},
+  doi={https://doi.org/10.1109/LRA.2020.2976327},
+  preview={RAL20_preview.png}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@article{JFR20,
+  title={Automatic targetless camera–LIDAR calibration by aligning edge with Gaussian mixture model},
+  author={Jaehyeon Kang and Nakju Doh},
+  abstract={This paper presents a calibration algorithm that does not require an artificial target object to precisely estimate a rigid-body transformation between a camera and a light detection and ranging (LIDAR) sensor. The proposed algorithm estimates calibration parameters by minimizing a cost function that evaluates the edge alignment between two sensor measurements. In particular, the proposed cost function is constructed using a projection model-based many-to-many correspondence of the edges to fully exploit measurements with different densities (dense photometry and sparse geometry). The alignment of the many-to-many correspondence is represented using the Gaussian mixture model (GMM) framework. Here, each component of the GMM, including weight, displacement, and standard deviation, is derived to suitably capture the intensity, location, and influential range of the edge measurements, respectively. The derived cost function is optimized by the gradient descent method with an analytical derivative. A coarse-to-fine scheme is also applied by gradually decreasing the standard deviation of the GMM to enhance the robustness of the algorithm. Extensive indoor and outdoor experiments validate the claim that the proposed GMM strategy improves the performance of the proposed algorithm. The experimental results also show that the proposed algorithm outperforms previous methods in terms of precision and accuracy by providing calibration parameters of standard deviations less than 0.6° and 2.1 cm with a reprojection error of 1.78 for a 2.1-megapixel image (2,048 × 1,024) in the best case.},
+  journal=JFR,
+  volume={37},
+  issue={1},
+  pages={158--179},
+  year={2020},
+  doi={https://doi.org/10.1002/rob.21893},
+  preview={JFR20_preview.png}
+}
+
+@inproceedings{IROS19,
+  title={Automatic spatial template generation for realistic 3D modeling of large-scale indoor spaces},
+  author={Janghun Hyeon and Hyunga Choi and JooHyung Kim and Bumchul Jang and Jaehyeon Kang and Nakju Doh},
+  abstract={This paper proposes a realistic indoor modeling framework for large-scale indoor spaces. The proposed framework reduces the geometric complexity of an indoor model to efficiently represent large-scale environments for image-based rendering (IBR) approaches. For this purpose, the proposed framework removes geometrically excluded objects (GEOs) in point cloud and images, which represent the primary factors in high geometric complexity. In particular, GEOs are coherently removed from all images using a global geometry model. Then, the remaining holes are inpainted using globally consistent guidelines, to achieve accurate image blending in IBR approaches. The experimental results verify that the proposed GEO removal framework provides efficient point clouds and images for realistic indoor modeling in large-scale indoor spaces.},
+  booktitle=IROS,
+  pages={4221--4228},
+  year={2019},
+  doi={https://doi.org/10.1109/IROS40897.2019.8968286},
+  preview={IROS19_preview.png}
+}
+
+@article{IASC17,
+  title={Towards a realistic indoor world reconstruction: Preliminary results for an object-oriented 3D RGB-D mapping},
+  author={ChangHyun Jun and Jaehyeon Kang and Suyong Yeon and Hyunga Choi and Tae-Young Chung and Nakju Doh},
+  abstract={A real world reconstruction that generates cyberspace not from a computer graphics tool, but from the real world, has been one of the main issues in two different communities of robotics and computer vision under different names of Simultaneous Localization And Mapping (SLAM) and Structure from Motion (SfM). However, there have been few trials that actively integrate SLAM and SfM for possible synergy. This paper shows the real world reconstruction can be enabled through this integration. As a result, the preliminary map has been generated of which five subgoals are: Realistic view (RGB), accurate geometry (depth), applicability to multi-floor indoor building, initial classification of a possible set of objects, and full automation. To this end, an engineering framework of “Acquire-Build-Comprehend (ABC)” is proposed, through which a sensor system acquires an RGB-Depth point cloud from the real world, builds a three-dimensional map, and comprehends this map to yield the possible set of objects. Its performance is demonstrated by building a map for three levels of indoor building of which volume is 1,408 m3.},
+  journal={Intelligent Automation & Soft Computing},
+  volume={23},
+  issue={2},
+  pages={207--218},
+  year={2017},
+  doi={https://doi.org/10.1080/10798587.2016.1186890},
+  preview={IASC17_preview.png}
+}
+
+@article{TRO16,
+  title={Full-DOF calibration of a rotating 2-D LIDAR with a simple plane measurement},
+  author={Jaehyeon Kang and Nakju Doh},
+  abstract={This paper proposes a calibration method that accurately estimates six parameters between the two centers of 2-D light detection and ranging (LIDAR) and a rotating platform. This method uses a simple plane, and to the best of our knowledge, it is the first to enable full-degree-of-freedom (DOF) estimation without additional hardware. The key concept behind this method is a decoupling property, in which the direction of a line on a plane does not contain 3-DOF translation terms. Based on this, a cost function for rotation is constructed, and 3-DOF rotation parameters are estimated. With this rotation, the remaining 3-DOF translation parameters are calculated in a manner that minimizes the cost function for translation only. In other words, an original 6-DOF problem is decoupled into two 3-DOF estimation problems. Given these cost functions, degenerate cases are mathematically analyzed for known cases (incomplete), and the robustness is numerically tested for all possible cases (complete). The performance of the method is validated by extensive simulations and experimentations, and the estimated parameters from the proposed method demonstrate better accuracy than previous methods.},
+  journal=TRO,
+  volume={32},
+  issue={5},
+  pages={1245--1263},
+  year={2016},
+  doi={https://doi.org/10.1109/TRO.2016.2596769},
+  preview={TRO16_preview.png}
+}
+
+@article{RAL16,
+  title={Accurate Continuous Sweeping Framework in Indoor Spaces With Backpack Sensor System for Applications to 3-D Mapping},
+  author={Keonyong Lee and Soo-Hyun Ryu and Suyong Yeon and HyunGi Cho and ChangHyun Jun and Jaehyeon Kang and Hyunga Choi and Janghun Hyeon and Insik Baek and Woonhyung Jung and Hanul Kim and Nakju Doh},
+  abstract={In indoor environments, there exists a few distinctive indoor spaces’ features (ISFs). However, up to our knowledge, there is no algorithm that fully utilizes ISF for accurate 3-D SLAM. In this letter, we suggest a sensor system that efficiently captures ISF and propose an algorithm framework that accurately estimates sensor’s 3-D poses by utilizing ISF. Experiments conducted in six representative indoor spaces show that the accuracy of the proposed method is better than the previous method. Furthermore, the proposed method shows robust performances in a sense that a set of adjusted parameters of the related algorithms does not need to be recalibrated as target environment changes. We also demonstrate that the proposed method not only generates 3-D depth maps but also builds a dense 3-D RGB-D map.},
+  journal=RAL,
+  volume={1},
+  issue={1},
+  pages={316--323},
+  year={2016},
+  doi={https://doi.org/10.1109/LRA.2016.2516585},
+  preview={RAL16_preview.png}
+}
+
+@inproceedings{UR14,
+  title={Analysis of the reference coordinate system used in the EKF-based SLAM},
+  author={Keonyong Lee and Soo-hyun Ryu and Jaehyeon Kang and Hyunga Choi and ChangHyun Jun and Nakju Doh},
+  abstract={In this paper we analyze the differences in the EKF-SLAM frameworks that are constructed using different coordinate system. First, we derive the EKF equations in the world coordinate system through modification of the EKF equations in the robot coordinate system. When the reference coordinate system is changed, the equations change due to its nonlinear behavior. We identify four EKF-SLAM frameworks, and then we demonstrate that any framework can be used in EKF-SLAM by simulation and real-life experiments.},
+  booktitle={International Conference on Ubiquitous Robots and Ambient Intelligence (URAI)},
+  pages={33--38},
+  year={2014},
+  doi={https://doi.org/10.1109/URAI.2014.7057516},
+  preview={URAI14_preview.png}
+}
+
+@article{IR14,
+  title={Robust-PCA-based hierarchical plane extraction for application to geometric 3D indoor mapping},
+  author={Suyong Yeon and ChangHyun Jun and Hyunga Choi and Jaehyeon Kang and Youngmok Yun and Nakju Doh},
+  abstract={Purpose - The authors aim to propose a novel plane extraction algorithm for geometric 3D indoor mapping with range scan data. Design/methodology/approach - The proposed method utilizes a divide-and-conquer step to efficiently handle huge amounts of point clouds not in a whole group, but in forms of separate sub-groups with similar plane parameters. This method adopts robust principal component analysis to enhance estimation accuracy. Findings - Experimental results verify that the method not only shows enhanced performance in the plane extraction, but also broadens the domain of interest of the plane registration to an information-poor environment (such as simple indoor corridors), while the previous method only adequately works in an information-rich environment (such as a space with many features). Originality/value - The proposed algorithm has three advantages over the current state-of-the-art method in that it is fast, utilizes more inlier sensor data that does not become contaminated by severe sensor noise and extracts more accurate plane parameters.},
+  journal={Industrial Robot: An International Journal},
+  volume={41},
+  issue={2},
+  pages={203--212},
+  year={2014},
+  doi={https://doi.org/10.1108/IR-04-2013-347},
+  preview={IR14_preview.png}
+}
+
+@article{RRT14,
+  title={Spline-based RRT path planner for non-holonomic robots},
+  author={Kwangjin Yang and Sangwoo Moon and Seunghoon Yoo and Jaehyeon Kang and Nakju Doh and Hong Bong Kim and Sanghyun Joo},
+  abstract={Planning in a cluttered environment under differential constraints is a difficult problem because the planner must satisfy the external constraints that arise from obstacles in the environment and the internal constraints due to the kinematic/dynamic limitations of the robot. This paper proposes a novel Spline-based Rapidly-exploring Random Tree (SRRT) algorithm which treats both the external and internal constraints simultaneously and efficiently. The computationally expensive numerical integration of the system dynamics is replaced by an efficient spline curve parameterization. In addition, the SRRT guarantees continuity of curvature along the path satisfying any upper-bounded curvature constraints. This paper presents the underlying theory to the SRRT algorithm and presents simulation and experiment results of a mobile robot efficiently navigating through cluttered environments.},
+  journal={Journal of Intelligent & Robotic Systems},
+  volume={73},
+  issue={1},
+  pages={763--782},
+  year={2014},
+  doi={https://doi.org/10.1007/s10846-013-9963-y},
+  preview={RRT14_preview.png}
+}
+
+article{JKRS12,
+  title={A new Observation Model to Improve the Consistency of EKF-SLAM Algorithm in Large-scale Environments},
+  author={Changjoo Nam and Jaehyeon Kang and Nakju Doh},
+  abstract={This paper suggests a new observation model for Extended Kalman Filter based Simultaneous Localization and Mapping (EKF-SLAM). Since the EKF framework linearizes non-linear functions around the current estimate, the conventional line model has large linearization errors when a mobile robot locates faraway from its initial position. On the other hand, the model that we propose yields less linearization error with respect to the landmark position and thus suitable in a large-scale environment. To achieve it, we build up a three-dimensional space by adding a virtual axis to the robot's two-dimensional coordinate system and extract a plane by using a detected line on the two-dimensional space and the virtual axis. Since Jacobian matrix with respect to the landmark position has small value, we can estimate the position of landmarks better than the conventional line model. The simulation results verify that the new model yields less linearization errors than the conventional line model.},
+  journal={The Journal of Korea Robotics Society},
+  volume={7},
+  issue={1},
+  pages={29--34},
+  year={2012},
+  doi={https://doi.org/10.7746/jkros.2012.7.1.029},
 }

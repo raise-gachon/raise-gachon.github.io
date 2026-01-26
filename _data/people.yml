@@ -1,0 +1,32 @@
+# _data/people.yml
+- name: "Jaehyeon Kang (강재현)"
+  status: "current"
+  role: "Lab Director"
+  image: "assets/img/prof_pic.jpg"
+  description: "Perception, SLAM, World Models"
+  website: "https://www.jkang.info"
+
+# - name: "홍길동"
+#   status: "current"
+#   role: "PhD Student"
+#   image: "assets/img/member1.jpg"
+#   description: "Semantic SLAM"
+#   website: "https://hong.github.io"
+
+# - name: "이순신"
+#   status: "current"
+#   role: "Master Student"
+#   image: "assets/img/member2.jpg"
+#   description: "Sensor Fusion"
+
+# - name: "강감찬"
+#   status: "current"
+#   role: "Undergraduate Intern"
+#   image: "assets/img/member3.jpg"
+#   description: "Robotics Perception"
+
+# - name: "졸업생1"
+#   status: "alumni"
+#   role: "Now at Samsung Electronics"
+#   image: "assets/img/alumni1.jpg"
+#   description: "MS Graduated in 2025"
