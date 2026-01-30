@@ -45,7 +45,7 @@ Our research focuses on the intersection of `Robotics` and `Spatial AI`, develop
 <br>
 
 ### **Research interests**
-RAISE Lab develops robotic intelligence, with a specific focus on Spatial Intelligence rooted in SLAM technology. Our research framework is currently built upon three core pillars: [1] Simultaneous Localization and Mapping (SLAM), [2] World Models for semantic understanding, and [3] Real-world Applications in agricultural and manufacturing environments. However, we maintain an open-ended approach and do not limit our future research directions as we strive to push the boundaries of robotics.
+RAISE Lab develops robotic intelligence, with a specific focus on Spatial Intelligence rooted in SLAM technology. Our research framework is currently built upon three core pillars: [1] Simultaneous Localization and Mapping (SLAM), [2] World Models for spatial understanding, and [3] Real-world Applications in agricultural and manufacturing environments. However, we do not limit our future research directions as we strive to push the boundaries of robotics.
 - keywords: Robot perception, SLAM, world model, spatial intelligence
 <br>
 <br>
@@ -53,19 +53,22 @@ RAISE Lab develops robotic intelligence, with a specific focus on Spatial Intell
 ---
 ### **한글 소개 (Introduction of the lab in Korean)**
 <!-- RAISE Lab은 로봇 지능을 개발합니다. 특히 <strong>SLAM</strong> 기술을 바탕으로 로봇의 <strong>공간 지능</strong>을 개발하는 연구를 수행하고 있습니다. 현재 우리의 주요 연구 방향은 아래와 같으나, 앞으로의 연구 방향에 제한을 두지 않습니다. -->
-RAISE Lab은 로봇 지능을 개발합니다. 특히 SLAM 기술을 바탕으로 로봇의 **공간 지능(Spatial Intelligence)**을 개발하는 연구를 수행하고 있습니다. 현재 우리의 연구는 **[1] 위치 추정 및 지도 작성(SLAM), [2] 공간의 의미 이해(World Model), [3] 농업 및 제조 현장 적용(Applications)**을 세 축으로 진행 중이나, 앞으로의 연구 방향에 제한을 두지 않습니다.
+RAISE Lab은 로봇 지능을 개발합니다. 특히 SLAM 기술을 바탕으로 로봇의 **공간 지능(Spatial Intelligence)**을 개발하는 연구를 수행하고 있습니다. 현재 우리의 연구는 **[1] 위치 추정 및 지도 작성(SLAM), [2] 공간의 의미 이해(World Model), [3] 농업 및 제조 현장 적용(Applications)** 세 축으로 진행 중이나, 앞으로의 연구 방향에 제한을 두지 않습니다.
+<br><br>
 
 ##### **[1] SLAM: Precise State Estimation**
 로봇이 복잡하고 가변적인 환경에서 자신의 위치를 정확히 특정하기 위한 근간 기술을 연구합니다.
 - 카메라, LiDAR, IMU 및 GNSS 등 이종 센서 데이터를 결합하거나 단일 센서를 사용하여 Odometry 및 SLAM 알고리즘을 개발합니다.
 - 위 과정에서 대규모 공간에서의 드리프트를 최소화하고 위치 추정 정밀도를 확보합니다.
 - 터널, 숲, 온실과 같이 정보가 부족한 환경에서도 위치 추정이 끊기지 않는 강인한 시스템을 만듭니다.
+<br><br>
 
 ##### **[2] World Model: Semantic & Spatial Understanding**
 단순한 기하적 지도를 넘어, 로봇이 공간의 인과관계와 의미를 이해하도록 하는 지능형 모델을 구축합니다.
 - 3차원 기하 정보에 의미와 물리적 이해를 더하여, 로봇이 "어디에 무엇이 있고, 그것이 어떻게 변할지" 이해하는 차세대 지도 모델을 연구합니다.
 - 대형 멀티모달 모델을 로봇 인식 과정에 통합하여, 비정형 환경에서도 상식적인 수준의 공간 추론이 가능한 시스템을 설계합니다.
 - 환경을 위계적 그래프 구조로 정형화하여 로봇의 복잡한 의사결정과 작업 계획을 지원하는 공간 지능을 구현합니다.
+<br><br>
 
 ##### **[3] Applications: Intelligent Field Robotics**
 원천 기술을 실제 필드에 적용하여 산업적·사회적 난제를 해결합니다.
