@@ -23,23 +23,30 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "Projects",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-teaching",
-          title: "Teaching",
-          description: "Course materials, schedules, and resources for classes taught.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/teaching/";
-          },
-        },{id: "nav-contact",
+        },{id: "dropdown-reading-group",
+              title: "Reading Group",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/reading/";
+              },
+            },{id: "dropdown-study-group",
+              title: "Study Group",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/study/";
+              },
+            },{id: "dropdown-courses",
+              title: "Courses",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/courses/";
+              },
+            },{id: "nav-contact",
           title: "Contact",
-          description: "Course materials, schedules, and resources for classes taught.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/contact/";
@@ -69,7 +76,22 @@ ninja.data = [{
       },{id: "news-raise-lab-robotics-amp-amp-ai-for-spatial-estimation-officially-launched-sparkles-smile",
           title: 'RAISE Lab (Robotics &amp;amp;amp; AI for Spatial Estimation) Officially Launched :sparkles: :smile:',
           description: "",
-          section: "News",},{
+          section: "News",},{id: "teachings-논문-읽기-연구실-구성하고-진행",
+          title: '논문 읽기 (연구실 구성하고 진행)',
+          description: "논문을 어떻게 읽어야 하는지를 다룹니다. 논문을 처음에 읽으라고 하면 처음부터 끝까지 쭉 읽기 마련이지요. 우리는 책을 읽거나 인터넷 페이지를 순서대로 보는 것에 익숙하니까요. 논문을 읽는 방법은 조금 다릅니다. 같이 배워 봅시다.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/paper_reading/";
+            },},{id: "teachings-논문-쓰기-연구실-구성하고-진행",
+          title: '논문 쓰기 (연구실 구성하고 진행)',
+          description: "논문을 어떻게 쓰는지 다룹니다. 논문은 정형화된 양식과 들어가야 할 내용들이 있습니다. 정해진 양식에 따라 논문에 필요한 내용을 쓰는 방법을 같이 배워 봅시다.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/paper_writing/";
+            },},{id: "teachings-probabilistic-robotics",
+          title: 'Probabilistic Robotics',
+          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/probabilistic_robotics/";
+            },},{
         id: 'social-cv',
         title: 'CV',
         section: 'Socials',
