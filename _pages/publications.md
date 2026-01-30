@@ -16,7 +16,7 @@ nav_order: 3
 <div class="publications">
   <div class="scholar-link mb-4">
     <p>For a complete and up-to-date list of publications, please visit 
-      <a href="https://scholar.google.com/citations?user={{site.scholar_userid}}" target="_blank" rel="noopener noreferrer" style="font-family: 'Courier New', Courier, monospace;">[Google Scholar Profile]</a>
+      <a href="https://scholar.google.com/citations?user=KCgEeDoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="font-family: 'Courier New', Courier, monospace;">[Google Scholar Profile]</a>
       .
     </p>
   </div>

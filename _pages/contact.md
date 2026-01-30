@@ -2,14 +2,34 @@
 layout: page
 permalink: /contact/
 title: Contact
-description: Course materials, schedules, and resources for classes taught.
+# description: We are hiring!
 nav: true
 nav_order: 7
 calendar: false
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+RAISE Lab은 로봇의 공간 인지 알고리즘을 개발하여 로봇이 보다 나은 생각을 할 수 있도록 만드는 연구를 하고 있습니다. 로봇 위치인식, 지도작성, 공간 이해 지능 등의 분야를 다루고 있습니다.
+<!-- 로봇의 공간 인지 알고리즘 개발을 통해 로봇의 행동(매니퓰레이션-로봇팔을 이용한 물체 조작, 주행, 경로 계획 등)을 개선하고자 합니다.  -->
+로봇 알고리즘과 관련된 재미있는 연구들이라면 다른 분야의 연구도 언제나 환영합니다.
 
-<!-- {% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %} -->
+학부 과정에서 프로그래밍, 로보틱스, 알고리즘, 인공지능, 기계학습 등의 과목을 수강했다면 연구를 수행하는데 많은 도움이 될 것 입니다. 또한 로봇연구는 융합적 성격을 가지고 있기 때문에 컴퓨터공학과 뿐만 아니라 인공지능학과, 전자공학과, 기계공학과 등 로봇 관련 전공자 모두 지원 가능합니다. 특히 로봇공학 전공을 이수한 학생들을 환영합니다.
 
-<!-- {% include courses.liquid %} -->
+우리 연구실은 학위 기간 동안 로봇 연구개발에 필요한 구현 능력과 좋은 연구 실적을 쌓아가는 것을 목표로 합니다.
+
+<!-- 해당 분야의 연구결과들을 로봇 분야 최고 수준의 저널 (T-RO), 학회 (ICRA, IROS, CoRL) 등에 출판하고 있습니다. 다수의 산학협력도 진행하고 있습니다. (삼성전자 트랙, LG전자 타겟랩 등) 따라서 학위 기간동안 로봇 연구개발에 필요한 구현 능력과 좋은 연구 실적도 쌓아갈 수 있을 것으로 기대합니다. -->
+
+<!-- 자세한 연구 내용에 대해서는 연구실 소개자료, YouTube 채널이나 [구글 스칼라](https://scholar.google.com/citations?user=KCgEeDoAAAAJ&hl=en), 연구실 웹사이트의 프로젝트, 연구 페이지를 살펴보시기 바랍니다. -->
+<!-- 자세한 연구 내용에 대해서는 [구글 스칼라](https://scholar.google.com/citations?user=KCgEeDoAAAAJ&hl=en), 연구실 웹사이트의 프로젝트, 연구 페이지를 살펴보시기 바랍니다. -->
+
+등록금 전액 지원 + 인건비 + 성과에 따른 인센티브를 제공합니다. 학생들이 학업 및 연구에만 집중할 수 있는 환경을 조성하기 위해 인건비는 과제 상황이 허락하는 한 충분하게 지급하는 것을 목표로 하고 있습니다.
+<!-- 으나 인건비가 연구실 선택의 주된 기준이 되는 지원자들은 정중히 사양합니다. -->
+학부 인턴의 경우 기본적으로 급여를 미지급 하지만 연구개발 활동에 참여하는 경우 일정 수준 지급합니다.
+
+**관심있는 분들은 다음 [구글폼](https://docs.google.com/forms/d/e/1FAIpQLSexEgS-wHH_18vHC53hDxu4bwM0O0S1BdEQDj2w-1Glc1iujg/viewform?usp=publish-editor) 작성을 하시면 연락을 드리겠습니다. (TO가 없는 경우 회신 받지 못할 수도 있습니다.)**
+- **박사후연구원(포닥), 석/박사 연구원, 학부 인턴 상시 모집 중 입니다.**
+- **학부 인턴은 5학기 이상 부터 지원 받습니다.**
+<!-- - 26년 1학기는 석사/석박통합/박사과정 모두 마감이며, 26년 2학기는 예외적인 경우가 아니면 추가 선발 계획은 없습니다. (학회/저널 논문 주저자 실적이 있거나 매우 우수한 프로그래밍 실력이 있는 경우는 면접 기회 부여) -->
+
+**문의 사항이 있으면 jhkang at gachon.ac.kr로 편하게 연락해 주세요. 😁**
+
+

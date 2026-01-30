@@ -1,0 +1,25 @@
+- date: 언젠가
+  topic: "더 재밌는 논문"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/..."
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/intro_slam.pdf"
+      type: "info"
+    - name: "Code"
+      link: "https://github.com/..."
+      type: "dark"
+
+- date: 조만간
+  topic: "재밌는 논문"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/..."
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/intro_slam.pdf"
+      type: "info"
+    - name: "Code"
+      link: "https://github.com/..."
+      type: "dark"

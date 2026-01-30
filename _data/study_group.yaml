@@ -1,0 +1,25 @@
+- date: 언젠가
+  topic: "SLAM (Probabilistic Robotics)"
+  materials:
+    - name: "Book"
+      link: "https://robots.stanford.edu/probabilistic-robotics/"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/intro_slam.pdf"
+      type: "info"
+    - name: "Code"
+      link: "https://github.com/..."
+      type: "dark"
+
+- date: 언젠가
+  topic: "SLAM (Probabilistic Robotics)"
+  materials:
+    - name: "Book"
+      link: "https://robots.stanford.edu/probabilistic-robotics/"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/intro_slam.pdf"
+      type: "info"
+    - name: "Code"
+      link: "https://github.com/..."
+      type: "dark"
