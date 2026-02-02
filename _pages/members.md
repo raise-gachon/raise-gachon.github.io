@@ -8,7 +8,7 @@ nav_order: 3
 
 <h2 class="category">Current Members</h2>
 <div class="container">
-  <div class="row row-cols-2 row-cols-md-3"> {% assign current_members = site.data.people | where: "status", "current" %}
+  <div class="row row-cols-1 row-cols-md-3"> {% assign current_members = site.data.people | where: "status", "current" %}
     {% for member in current_members %}
     <div class="col mb-4">
       <div class="card h-100 z-depth-1 text-center border-0">
