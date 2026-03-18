@@ -1,6 +1,3 @@
----
----
-
 @string{ICRA = "IEEE International Conference on Robotics and Automation (ICRA)"}
 @string{IROS = "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"}
 @string{CASE = "IEEE International Conference on Automation Science and Engineering (CASE)"}
@@ -16,6 +13,20 @@
 @string{PAMI ="IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)"}
 @string{BMVC ="The British Machine Vision Conference (BMVC)"}
 @string{TIM ="IEEE Transactions on Instrumentation and Measurement (TIM)"}
+
+@article{RAL26,
+  title={Incremental 3D Crop Model Association for Real-Time Counting in Dense Orchards},
+  author={Daesung Park and KwangEun Ko and Dongbum Pyo and Jaehyeon Kang},
+  abstract={Accurate real-time crop counting is essential for autonomous agricultural systems. However, existing methods often fail in dense plantings due to heavy foliage, irregular planting patterns, and frequent occlusions. While 2D tracking suffers from double-counting and 3D reconstruction requires offline processing, we propose a real-time crop counting framework that incrementally constructs global 3D crop instances during data collection. Each crop is modeled as a 3D oriented bounding box, initialized upon detection and updated with subsequent observations. To ensure robust association across frames, we employ 3D Generalized Intersection over Union (GIoU) for spatial matching and confidence-based filtering for validation, effectively reducing double-counting in dense orchards. Unlike prior methods, our approach supports on-the-fly counting without post-hoc reconstruction and performs reliably in unstructured field conditions. Experimental results demonstrate the accuracy and real-time capability of the proposed system in dense agricultural settings.},
+  journal=RAL,
+  volume={11},
+  issue={3},
+  pages={3860--3866},
+  year={2026},
+  doi={https://doi.org/10.1109/LRA.2026.3662648},
+  preview={RAL26_preview.png},
+  video={https://www.youtube-nocookie.com/embed/pnC5k1dmQLA}
+}
 
 @article{TIM25,
   title={Retraining-Free Camera Localization in Indoor Point Clouds Using Edges and Normals},

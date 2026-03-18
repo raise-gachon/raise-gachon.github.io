@@ -53,7 +53,7 @@ RAISE Lab develops robotic intelligence, with a specific focus on Spatial Intell
 ---
 ### **한글 소개 (Introduction of the lab in Korean)**
 <!-- RAISE Lab은 로봇 지능을 개발합니다. 특히 <strong>SLAM</strong> 기술을 바탕으로 로봇의 <strong>공간 지능</strong>을 개발하는 연구를 수행하고 있습니다. 현재 우리의 주요 연구 방향은 아래와 같으나, 앞으로의 연구 방향에 제한을 두지 않습니다. -->
-RAISE Lab은 로봇 지능을 개발합니다. 특히 SLAM 기술을 바탕으로 로봇의 **공간 지능(Spatial Intelligence)**을 개발하는 연구를 수행하고 있습니다. 현재 우리의 연구는 **[1] 위치 추정 및 지도 작성(SLAM), [2] 공간의 의미 이해(World Model), [3] 농업 및 제조 현장 적용(Applications)** 세 축으로 진행 중이나, 앞으로의 연구 방향에 제한을 두지 않습니다.
+가천대학교 RAISE Lab은 로봇 지능을 개발합니다. 특히 SLAM 기술을 바탕으로 로봇의 **공간 지능(Spatial Intelligence)**을 개발하는 연구를 수행하고 있습니다. 현재 우리의 연구는 **[1] 위치 추정 및 지도 작성(SLAM), [2] 공간의 의미 이해(World Model), [3] 농업 및 제조 현장 적용(Applications)** 세 축으로 진행 중이나, 앞으로의 연구 방향에 제한을 두지 않습니다.
 <br><br>
 
 ##### **[1] SLAM: Precise State Estimation**
