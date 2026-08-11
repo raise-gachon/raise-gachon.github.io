@@ -20,19 +20,20 @@
   }
 }
 
+/* one entry == one date; it may hold several cards */
 .rg-entry {
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 
   &:last-child {
     margin-bottom: 0;
   }
 
-  /* marker on the axis */
+  /* marker on the axis, aligned with the date label */
   &::before {
     content: "";
     position: absolute;
-    top: 22px;
+    top: 4px;
     left: -27px;
     width: 12px;
     height: 12px;
@@ -53,6 +54,11 @@
   padding: 15px 18px;
   background-color: var(--global-bg-color);
   transition: transform 0.2s ease-in-out;
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &:hover {
     transform: translateY(-3px);
@@ -60,13 +66,14 @@
   }
 }
 
+/* date heading, shown once per date above its cards */
 .rg-date {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 0.06em;
-  text-transform: uppercase;
+  line-height: 1.4;
   color: var(--global-theme-color);
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 .rg-topic {
@@ -125,11 +132,6 @@
   color: var(--global-theme-color);
 }
 
-.rg-empty {
-  color: var(--global-text-color-light);
-  font-style: italic;
-}
-
 @media (max-width: 576px) {
   .reading-timeline {
     padding-left: 20px;
@@ -139,7 +141,7 @@
     left: -21px;
     width: 10px;
     height: 10px;
-    top: 20px;
+    top: 5px;
   }
 
   .rg-card {

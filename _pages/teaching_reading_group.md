@@ -13,10 +13,13 @@ calendar: false
 
 <div class="reading-timeline">
   {% assign reading_entries = site.data.reading_group | sort: "date" | reverse %}
-  {% for entry in reading_entries %}
+  {% assign reading_groups = reading_entries | group_by: "date" %}
+  {% for group in reading_groups %}
   <div class="rg-entry">
+    {% assign first_entry = group.items | first %}
+    <div class="rg-date">{{ first_entry.date_label | default: group.name | date: "%Y.%m.%d" }}</div>
+    {% for entry in group.items %}
     <div class="rg-card">
-      {% if entry.date %}<div class="rg-date">{{ entry.date_label | default: entry.date | date: "%Y.%m.%d" }}</div>{% endif %}
       <h3 class="rg-topic">{{ entry.topic }}</h3>
       {% if entry.materials %}
       <div class="rg-materials">
@@ -42,6 +45,7 @@ calendar: false
       </div>
       {% endif %}
     </div>
+    {% endfor %}
   </div>
   {% endfor %}
 </div>
