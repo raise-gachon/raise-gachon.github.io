@@ -8,30 +8,40 @@ nav_order: 6
 calendar: false
 ---
 
-**`연구실 구성원이 모이고 나면 관심 분야의 논문을 같이 읽고 분석 할 예정입니다.`**
-**연구실 참여를 희망하는 학부생 및 대학원 진학 희망자는 [Contact](/contact) 페이지를 참고해 주세요.**
+<!-- **`연구실 구성원이 모이고 나면 관심 분야의 논문을 같이 읽고 분석 할 예정입니다.`**
+**연구실 참여를 희망하는 학부생 및 대학원 진학 희망자는 [Contact](/contact) 페이지를 참고해 주세요.** -->
 
-<table class="table table-hover">
-  <thead class="thead-light">
-    <tr>
-      <th scope="col">Date</th>
-      <th scope="col">Topic</th>
-      <th scope="col">Material</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for entry in site.data.reading_group %}
-    <tr>
-      <td class="align-middle">{{ entry.date }}</td>
-      <td class="align-middle"><strong>{{ entry.topic }}</strong></td>
-      <td class="align-middle">
+<div class="reading-timeline">
+  {% assign reading_entries = site.data.reading_group | sort: "date" | reverse %}
+  {% for entry in reading_entries %}
+  <div class="rg-entry">
+    <div class="rg-card">
+      {% if entry.date %}<div class="rg-date">{{ entry.date_label | default: entry.date | date: "%Y.%m.%d" }}</div>{% endif %}
+      <h3 class="rg-topic">{{ entry.topic }}</h3>
+      {% if entry.materials %}
+      <div class="rg-materials">
         {% for mat in entry.materials %}
-          <a href="{{ mat.link }}" target="_blank" class="badge badge-{{ mat.type | default: 'secondary' }} p-2 mr-1">
-            {{ mat.name }}
+          {% assign mat_name = mat.name | downcase %}
+          {% if mat.icon %}
+            {% assign mat_icon = mat.icon %}
+          {% elsif mat_name contains 'paper' %}
+            {% assign mat_icon = 'fa-solid fa-file-lines' %}
+          {% elsif mat_name contains 'slide' %}
+            {% assign mat_icon = 'fa-solid fa-display' %}
+          {% elsif mat_name contains 'code' %}
+            {% assign mat_icon = 'fa-brands fa-github' %}
+          {% elsif mat_name contains 'video' %}
+            {% assign mat_icon = 'fa-brands fa-youtube' %}
+          {% else %}
+            {% assign mat_icon = 'fa-solid fa-link' %}
+          {% endif %}
+          <a href="{{ mat.link }}" target="_blank" rel="noopener noreferrer" class="rg-tag rg-tag--{{ mat.type | default: 'secondary' }}">
+            <i class="{{ mat_icon }}"></i>{{ mat.name }}
           </a>
         {% endfor %}
-      </td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

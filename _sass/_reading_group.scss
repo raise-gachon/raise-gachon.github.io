@@ -1,0 +1,152 @@
+/*****************************
+ * Reading group timeline
+ *****************************/
+
+.reading-timeline {
+  position: relative;
+  margin-top: 30px;
+  padding-left: 28px;
+
+  /* vertical axis */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 5px;
+    width: 2px;
+    background-color: var(--global-divider-color);
+    opacity: 0.35;
+  }
+}
+
+.rg-entry {
+  position: relative;
+  margin-bottom: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  /* marker on the axis */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: -27px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--global-bg-color);
+    border: 2px solid var(--global-theme-color);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  &:hover::before {
+    background-color: var(--global-theme-color);
+  }
+}
+
+.rg-card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 5px;
+  padding: 15px 18px;
+  background-color: var(--global-bg-color);
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.rg-date {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+  margin-bottom: 6px;
+}
+
+.rg-topic {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--global-text-color);
+}
+
+.rg-materials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.rg-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--global-divider-color);
+  background-color: transparent;
+  color: var(--global-text-color-light);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-decoration: none;
+  transition:
+    color 0.2s ease-in-out,
+    border-color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+
+  i {
+    font-size: 0.8rem;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--global-hover-text-color);
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+/* accent variants, keyed off the `type` field in _data/reading_group.yml */
+.rg-tag--primary,
+.rg-tag--info,
+.rg-tag--success,
+.rg-tag--warning,
+.rg-tag--danger,
+.rg-tag--dark {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+}
+
+.rg-empty {
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .reading-timeline {
+    padding-left: 20px;
+  }
+
+  .rg-entry::before {
+    left: -21px;
+    width: 10px;
+    height: 10px;
+    top: 20px;
+  }
+
+  .rg-card {
+    padding: 13px 15px;
+  }
+
+  .rg-topic {
+    font-size: 1rem;
+  }
+}
