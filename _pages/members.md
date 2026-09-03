@@ -21,7 +21,7 @@ nav_order: 3
           <h6 class="font-weight-bold">{{ member.name }}</h6>
           <p class="text-muted" style="font-size: 0.85rem; margin-bottom: 5px;">{{ member.role }}</p>
           <p style="font-size: 0.75rem;">{{ member.description }}</p>
-          
+
           {% if member.website %}
             <div class="member-website mt-2">
               <a href="{{ member.website }}" target="_blank" class="website-link">
@@ -33,6 +33,7 @@ nav_order: 3
       </div>
     </div>
     {% endfor %}
+
   </div>
 </div>
 
