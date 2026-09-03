@@ -173,7 +173,7 @@
       type: "dark"
 
 - date: 2026-08-14
-  topic: "NeRF: RepresentingScenesasNeuralRadianceFieldsforViewSynthesis"
+  topic: "NeRF: Representing Scenesas Neural Radiance Fields for View Synthesis"
   materials:
     - name: "Paper"
       link: "https://arxiv.org/abs/2003.08934"
