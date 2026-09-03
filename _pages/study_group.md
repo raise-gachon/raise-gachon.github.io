@@ -11,5 +11,4 @@ calendar: false
 **`연구실 구성원이 모이고 나면 방학 기간을 중심으로 스터디 그룹을 운영하고자 합니다.`**
 **연구실 참여를 희망하는 학부생 및 대학원 진학 희망자는 [Contact](/contact) 페이지를 참고해 주세요.**
 
-
 {% include courses.liquid %}

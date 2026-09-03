@@ -28,7 +28,7 @@ schedule:
         url: https://robots.stanford.edu/probabilistic-robotics/
       - name: Slides (공개전)
         url: https://en.wikipedia.org/wiki/Robot
-  
+
   - week: 3
     date: 미정
     topic: TBA

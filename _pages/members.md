@@ -44,8 +44,8 @@ nav_order: 3
     {% for member in alumni_members %}
     <div class="col mb-4">
       <div class="text-center">
-        <img src="{{ member.image | relative_url }}" 
-             class="img-fluid rounded-circle grayscale" 
+        <img src="{{ member.image | relative_url }}"
+             class="img-fluid rounded-circle grayscale"
              style="width: 80px; height: 80px; object-fit: cover; opacity: 0.7;">
         <div class="mt-2">
           <strong style="font-size: 0.9rem;">{{ member.name }}</strong><br>
