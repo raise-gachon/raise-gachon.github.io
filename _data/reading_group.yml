@@ -10,7 +10,7 @@
     - name: "Code"
       link: "https://github.com/Tsinghua-MARS-Lab/SLAM-Former"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://tsinghua-mars-lab.github.io/SLAM-Former"
       type: "dark"
 
@@ -26,7 +26,7 @@
     - name: "Code"
       link: "https://github.com/Inception3D/Easi3R"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://easi3r.github.io/"
       type: "dark"
 
@@ -43,7 +43,7 @@
     - name: "Code"
       link: "https://github.com/3DAgentWorld/VGGT4D"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://3dagentworld.github.io/vggt4d/"
       type: "dark"
 
@@ -59,7 +59,7 @@
     - name: "Code"
       link: "https://github.com/rpng/open_vins"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://docs.openvins.com/"
       type: "dark"
 
@@ -75,7 +75,7 @@
     # - name: "Code"
     #   link: "Released soon"
     #   type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://rory-weicheng.github.io/SPARCS/"
       type: "dark"
       
@@ -104,7 +104,7 @@
     - name: "Code"
       link: "https://github.com/rmurai0610/MASt3R-SLAM"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://edexheim.github.io/mast3r-slam/"
       type: "dark"
 
@@ -133,7 +133,7 @@
     - name: "Code"
       link: "https://github.com/yyfz/Pi3"
       type: "dark"
-    - name: "Site"
+    - name: "Page"
       link: "https://yyfz.github.io/pi3/"
       type: "dark"
 
@@ -148,4 +148,56 @@
       type: "info"
     - name: "Code"
       link: "https://github.com/MIT-SPARK/Picasso"
+      type: "dark"
+
+- date: 2026-08-14
+  topic: "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/1011.0686"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/reading group/26_0814_PMLR11_DAgger.pdf"
+      type: "info"
+
+- date: 2026-08-14
+  topic: "UniSim-SLAM: Feed-Forward SLAM with Unified Sim(3) Optimization"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/2608.01706"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/reading group/26_0814_ECCV26_UniSim-SLAM.pdf"
+      type: "info"
+    - name: "Page"
+      link: "https://vision3d-lab.github.io/unisim-slam/"
+      type: "dark"
+
+- date: 2026-08-14
+  topic: "NeRF: RepresentingScenesasNeuralRadianceFieldsforViewSynthesis"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/2003.08934"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/reading group/26_0814_ECCV20_NeRF.pdf"
+      type: "info"
+    - name: "Page"
+      link: "https://www.matthewtancik.com/nerf"
+      type: "dark"
+    - name: "Code"
+      link: "https://github.com/bmild/nerf"
+      type: "dark"
+
+- date: 2026-08-21
+  topic: "AIM-SLAM: Dense Monocular SLAM via Adaptive and Informative Multi-View Keyframe Prioritization with Foundation Model"
+  materials:
+    - name: "Paper"
+      link: "https://arxiv.org/abs/2603.05097"
+      type: "primary"
+    - name: "Slide"
+      link: "/assets/pdf/reading group/26_0821_ICRA26_AIM-SLAM"
+      type: "info"
+    - name: "Page"
+      link: "https://aimslam.github.io/"
       type: "dark"
