@@ -24,7 +24,7 @@
   status: "current"
   role: "Undergraduate Intern"
   image: "assets/img/yewon_han.jpg"
-  description: "Research interests: RGB-D SLAM"
+  description: "Research interests: RGB-D SLAM, Sim2Real"
 
 - name: "Byunghoon Yoo (유병훈)"
   status: "current"
